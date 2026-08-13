@@ -326,7 +326,7 @@ This project does **not** represent an actual company, client engagement, contra
 
 Replace this placeholder after deployment:
 
-**Live Website:** `https://your-live-demo-url.example`
+**Live Website:** `https://arunika-engineering.vercel.app/`
 
 ---
 
