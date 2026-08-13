@@ -1,0 +1,164 @@
+/* ==========================================
+   ARUNIKA INDUSTRIAL SOLUTIONS - STYLE.CSS
+   Design Tokens, Global Reset, Typography & Layout
+   ========================================== */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+  /* Color Palette — Bright Corporate Light Art Direction Tokens */
+  --color-primary: #17212B;
+  --color-primary-light: #EEF1EF;
+  --color-steel-navy: #EEF1EF;
+  --color-steel-blue: #D9DEDC;
+  --color-accent: #A96F31;
+  --color-accent-hover: #946029;
+  --color-background: #F7F8F6;
+  --color-background-alt: #EEF1EF;
+  --color-white: #FFFFFF;
+  --color-text: #17212B;
+  --color-text-inverse: #FFFFFF;
+  --color-muted: #68747D;
+  --color-muted-light: #8A96A0;
+  --color-border: #D9DEDC;
+  --color-border-translucent: rgba(23, 33, 43, 0.10);
+  --color-border-dark: rgba(184, 121, 50, 0.3);
+  --color-light-overlay: rgba(247, 248, 246, 0.88);
+
+  /* Typography */
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing & Layout */
+  --container-max-width: 1280px;
+  --container-padding-desktop: 32px;
+  --container-padding-mobile: 20px;
+
+  /* Header Heights */
+  --header-height-desktop: 80px;
+  --header-height-mobile: 70px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadow & Radii (Clean & Engineered) */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --shadow-subtle: none;
+  --shadow-navbar: 0 4px 20px rgba(23, 33, 43, 0.06);
+}
+
+/* Reset & Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.menu-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+/* Headings Base */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--color-muted);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Layout Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-desktop);
+  padding-right: var(--container-padding-desktop);
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

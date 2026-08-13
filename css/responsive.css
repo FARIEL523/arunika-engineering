@@ -1,0 +1,496 @@
+/* ==========================================
+   ARUNIKA INDUSTRIAL SOLUTIONS - RESPONSIVE.CSS
+   Media Queries & Mobile Breakpoints
+   ========================================== */
+
+/* ------------------------------------------
+   Large Desktop Adjustments (under 1280px)
+   ------------------------------------------ */
+@media (max-width: 1280px) {
+  .hero-headline {
+    font-size: 3rem;
+  }
+}
+
+/* ------------------------------------------
+   Tablet Landscape / Small Laptop (under 1024px)
+   ------------------------------------------ */
+@media (max-width: 1024px) {
+  :root {
+    --header-height-desktop: 76px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-visual-card {
+    max-width: 600px;
+    margin-top: 10px;
+  }
+
+  .hero-headline {
+    font-size: 2.75rem;
+  }
+
+  .services-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* Industries Section Tablet & Mobile Adjustments */
+  .industries-section {
+    padding: 90px 0;
+  }
+
+  .industries-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .industries-visual {
+    order: 1;
+    position: relative;
+    top: 0;
+  }
+
+  .industries-image-wrapper {
+    height: 360px;
+  }
+
+  .industries-grid {
+    order: 2;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .industries-headline {
+    font-size: 2rem;
+  }
+
+  .industries-description {
+    font-size: 1rem;
+  }
+
+  .industry-item {
+    padding: 20px 0;
+  }
+
+  .industry-title {
+    font-size: 1.25rem;
+  }
+
+  .industry-description {
+    font-size: 0.875rem;
+  }
+
+  /* Projects Section Tablet & Mobile Adjustments */
+  .projects-section {
+    padding: 90px 0;
+  }
+
+  .projects-intro {
+    margin-bottom: 44px;
+  }
+
+  .projects-headline {
+    font-size: 2rem;
+  }
+
+  .projects-description {
+    font-size: 1rem;
+  }
+
+  .featured-project {
+    margin-bottom: 44px;
+  }
+
+  .featured-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project-visual {
+    height: 300px;
+    min-height: 260px;
+  }
+
+  .featured-project-content {
+    padding: 32px 24px;
+  }
+
+  .featured-project-title {
+    font-size: 1.65rem;
+  }
+
+  .featured-project-description {
+    font-size: 0.9375rem;
+    margin-bottom: 24px;
+  }
+
+  .project-meta-grid {
+    gap: 20px 24px;
+    margin-bottom: 28px;
+  }
+
+  .supporting-project-item {
+    padding: 24px 0;
+  }
+
+  .supporting-project-inner {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .supporting-left {
+    gap: 16px;
+  }
+
+  .supporting-number {
+    font-size: 1.125rem;
+  }
+
+  .supporting-title {
+    font-size: 1.25rem;
+  }
+
+  .supporting-description {
+    font-size: 0.875rem;
+  }
+
+  .supporting-meta-bar {
+    gap: 16px 20px;
+    padding-left: 28px;
+  }
+
+  .supporting-arrow {
+    display: none;
+  }
+
+  /* Why Arunika Section Tablet & Mobile Adjustments */
+  .why-section {
+    padding: 90px 0;
+  }
+
+  .why-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .why-intro {
+    max-width: 100%;
+  }
+
+  .why-headline {
+    font-size: 2rem;
+  }
+
+  .why-description {
+    font-size: 1rem;
+  }
+
+  .pillar-item {
+    padding: 20px 0;
+  }
+
+  .pillar-title {
+    font-size: 1.15rem;
+  }
+
+  .pillar-description {
+    font-size: 0.875rem;
+  }
+
+  /* Conversion CTA Section Tablet & Mobile Adjustments */
+  .conversion-cta-section {
+    padding: 72px 0;
+  }
+
+  .cta-layout {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .cta-headline {
+    font-size: 1.85rem;
+  }
+
+  .cta-description {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Contact Section Tablet & Mobile Adjustments */
+  .contact-section {
+    padding: 90px 0;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .contact-info-col {
+    max-width: 100%;
+  }
+
+  .contact-headline {
+    font-size: 2rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+
+  .inquiry-form {
+    padding: 32px 24px;
+  }
+
+  .form-row-2col {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* Footer Tablet & Mobile Adjustments */
+  .site-footer {
+    padding: 64px 0 32px 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    margin-bottom: 48px;
+  }
+
+  .footer-brand-col {
+    grid-column: span 2;
+  }
+}
+
+/* ------------------------------------------
+   Tablet & Mobile Navigation Breakpoint (under 768px)
+   ------------------------------------------ */
+@media (max-width: 768px) {
+  :root {
+    --container-padding-desktop: 20px;
+    --container-padding-mobile: 20px;
+  }
+
+  .site-header {
+    height: var(--header-height-mobile);
+  }
+
+  /* Hide Desktop Navigation, Show Mobile Toggle */
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  /* Hero Adjustments for Mobile */
+  .hero-section {
+    padding-top: var(--header-height-mobile);
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(247, 248, 246, 0.90) 0%,
+      rgba(247, 248, 246, 0.82) 60%,
+      rgba(247, 248, 246, 0.92) 100%
+    );
+  }
+
+  .hero-container {
+    padding-top: 36px;
+    padding-bottom: 20px;
+  }
+
+  .hero-headline {
+    font-size: 2.25rem;
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 28px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .hero-meta {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 20px;
+  }
+
+  .meta-divider {
+    display: none;
+  }
+
+  .meta-item {
+    width: 45%;
+  }
+
+  /* About Section Tablet & Mobile Adjustments */
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .about-headline {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .about-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+
+  .about-cta-wrapper {
+    width: 100%;
+  }
+
+  .about-cta-wrapper .btn {
+    width: 100%;
+  }
+
+  .about-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 20px;
+    margin-top: 56px;
+    padding-top: 36px;
+  }
+
+  .metric-divider {
+    display: none;
+  }
+
+  .metric-value {
+    font-size: 2.25rem;
+  }
+}
+
+/* ------------------------------------------
+   Small Mobile Devices (under 430px)
+   ------------------------------------------ */
+@media (max-width: 430px) {
+  .hero-headline {
+    font-size: 2rem;
+  }
+
+  .hero-eyebrow,
+  .about-eyebrow {
+    font-size: 0.75rem;
+  }
+
+  .about-headline {
+    font-size: 1.75rem;
+  }
+
+  .mobile-nav-link {
+    font-size: 1.5rem;
+  }
+
+  .meta-item {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------
+   Ultra Small Mobile Devices (under 375px & 320px)
+   ------------------------------------------ */
+@media (max-width: 375px) {
+  .hero-headline {
+    font-size: 1.75rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.875rem;
+  }
+
+  .metric-value {
+    font-size: 1.85rem;
+  }
+
+  .metric-label {
+    font-size: 0.6875rem;
+  }
+
+  /* Services Section Tablet & Mobile Adjustments */
+  .services-section {
+    padding: 90px 0;
+  }
+
+  .services-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .services-intro {
+    margin-bottom: 44px;
+  }
+
+  .services-headline {
+    font-size: 2rem;
+  }
+
+  .services-description {
+    font-size: 1rem;
+  }
+
+  .service-item {
+    padding: 24px 0;
+  }
+
+  .service-row-inner {
+    gap: 20px;
+  }
+
+  .service-title {
+    font-size: 1.35rem;
+  }
+
+  .service-description {
+    font-size: 0.875rem;
+  }
+}
